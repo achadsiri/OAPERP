@@ -1,0 +1,22 @@
+✅ คำสั่งสร้างโปรเจกต์ EGPConnect
+dotnet new console -n EGPConnect
+cd EGPConnect
+code .
+
+
+🧪 รันโปรแกรมทดสอบ
+🔧 แก้ไฟล์ Program.cs
+Console.WriteLine("สวัสดีจาก EGPConnect!");
+
+⚙️ สั่ง build เพื่อสร้าง .exe
+dotnet build -c Release
+
+▶️ รัน .exe
+.\bin\Release\net9.0\EGPConnect.exe
+
+
+🔁 วิธี 1: Publish แบบไฟล์เดียว (Single-file EXE)
+dotnet publish -c Release -r win-x64 --self-contained true /p:PublishSingleFile=true
+
+🔎 ผลลัพธ์จะอยู่ใน:
+bin\Release\net9.0\win-x64\publish\
