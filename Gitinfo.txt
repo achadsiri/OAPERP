@@ -1,0 +1,26 @@
+git add .
+git commit -m "Initial commit for OAPERP project"
+
+
+✅ วิธีแก้: เพิ่ม Remote แล้ว Push ขึ้น GitHub
+🔧 ขั้นตอน:
+ไปที่ https://github.com/new
+
+สร้าง repository ใหม่ เช่นชื่อ OAPERP
+✅ อย่าเลือก Initialize with README
+
+สมมุติ URL ที่ GitHub ให้มาคือ:
+https://github.com/achadsiri/OAPERP.git
+
+🔁 กลับมาที่ VS Code / Terminal
+รันคำสั่ง:
+git remote add origin https://github.com/achadsiri/OAPERP.git
+git branch -M main
+git push -u origin main
+
+✅ หลังจาก push เสร็จ
+คุณจะสามารถ:
+
+ใช้ปุ่ม sync, push, pull ใน VS Code ได้เลย
+
+แสดงผลบน GitHub ทันที
