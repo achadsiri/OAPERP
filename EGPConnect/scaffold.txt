@@ -1,0 +1,11 @@
+dotnet ef dbcontext scaffold "Data Source=dev.softsuite.co.th;Initial Catalog=OAPDB;User Id=oapadmin;Password=!oap2025!;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer --output-dir Models --table ProjectEGP --table ProjectEGPContract --table SystemConfig --context OAPDbContext --force
+
+
+protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+{
+    if (!optionsBuilder.IsConfigured)
+    {
+        // fallback (ถ้าไม่ได้กำหนดใน constructor)
+        optionsBuilder.UseSqlServer("<< fallback string >>");
+    }
+}
